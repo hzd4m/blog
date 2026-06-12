@@ -1,0 +1,15 @@
+# Bridgetown configuration file (YAML)
+#
+# Custom collections para a seção "Livros" do blog.
+# As demais opções (template_engine, url, etc.) continuam em
+# `config/initializers.rb`. Este arquivo apenas adiciona collections.
+
+collections:
+  livros:
+    output: true
+    permalink: /livros/:slug/
+    sort_by: ordem
+  capitulos:
+    output: true
+    permalink: /livros/:livro_slug/:slug/
+    sort_by: ordem
