@@ -16,7 +16,7 @@
 
 Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
-  url ""
+  url "https://hzd4m.github.io"
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
@@ -46,7 +46,8 @@ Bridgetown.configure do |config|
   # If you're using esbuild for frontend assets, edit `esbuild.config.js` to
   # update `publicPath`.
   #
-  # base_path "/"
+  # GitHub Pages serve o site em hzd4m.github.io/blog_zd4 (project page).
+  base_path "/blog_zd4"
 
   # You can also modify options on this configuration object directly, like so:
   #
