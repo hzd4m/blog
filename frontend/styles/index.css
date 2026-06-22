@@ -428,6 +428,82 @@ pre code {
 }
 
 /* ----------------------------------------------------------------------------
+   8c. HOME — hero "terminal" + seções
+   ---------------------------------------------------------------------------- */
+.home-hero {
+  margin: var(--space-md) 0 var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-rule);
+}
+.home-hero .prompt {
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+  color: var(--color-graphite);
+  margin: 0 0 var(--space-sm);
+}
+.home-hero .prompt-sig { color: var(--color-amber); }
+
+.hero-titulo {
+  font-family: var(--font-heading);
+  font-size: var(--step-3);
+  font-weight: 700;
+  line-height: var(--leading-heading);
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-sm);
+}
+.hero-titulo .cursor {
+  color: var(--color-amber);
+  margin-left: 0.05em;
+  animation: piscar 1.1s steps(1) infinite;
+}
+.hero-sub {
+  font-size: var(--step-1);
+  color: var(--color-graphite);
+  max-width: 54ch;
+  margin: 0;
+}
+
+.home-secao-titulo {
+  font-family: var(--font-heading);
+  font-size: var(--step-small);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-graphite);
+  margin: var(--space-xl) 0 var(--space-sm);
+}
+
+.home-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.home-chips a {
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+  text-decoration: none;
+  background-image: none;           /* anula o sublinhado-âmbar global de `main a` */
+  color: var(--color-graphite);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.6rem;
+  transition: color var(--dur-fast) var(--ease),
+              border-color var(--dur-fast) var(--ease);
+}
+.home-chips a:hover {
+  color: var(--color-ink);
+  border-color: var(--color-amber);
+}
+
+.home-mais {
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+  margin-top: var(--space-sm);
+}
+
+/* ----------------------------------------------------------------------------
    9. RODAPÉ
    ---------------------------------------------------------------------------- */
 footer {
