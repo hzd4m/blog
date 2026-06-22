@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="projeto">
+  <header>
+    <h1><%= data.title %></h1>
+    <% if data.subtitulo %>
+      <p class="projeto-subtitulo"><%= data.subtitulo %></p>
+    <% end %>
+    <% if data.tech || data.ano %>
+      <p class="projeto-meta">
+        <% if data.tech %><%= Array(data.tech).join(" · ") %><% end %><% if data.ano %> &middot; <%= data.ano %><% end %>
+      </p>
+    <% end %>
+  </header>
+
+  <div class="post-body">
+    <%= yield %>
+  </div>
+
+  <% if data.galeria && !data.galeria.empty? %>
+    <section class="projeto-galeria">
+      <% data.galeria.each do |img| %>
+        <figure>
+          <img src="<%= relative_url(img['src']) %>" alt="<%= img['legenda'] %>" loading="lazy" />
+          <% if img['legenda'] %><figcaption><%= img['legenda'] %></figcaption><% end %>
+        </figure>
+      <% end %>
+    </section>
+  <% end %>
+</article>

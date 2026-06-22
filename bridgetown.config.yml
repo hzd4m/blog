@@ -13,3 +13,7 @@ collections:
     output: true
     permalink: /livros/:livro_slug/:slug/
     sort_by: ordem
+  projetos:
+    output: true
+    permalink: /projetos/:slug/
+    sort_by: ordem

@@ -369,6 +369,65 @@ pre code {
 }
 
 /* ----------------------------------------------------------------------------
+   8b. PROJETOS — listagem e galeria de screenshots
+   ---------------------------------------------------------------------------- */
+.projetos-intro { color: var(--color-graphite); }
+
+.projetos-lista { list-style: none; padding: 0; margin: var(--space-lg) 0 0; }
+
+.projeto-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-md);
+  align-items: start;
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-rule);
+}
+.projeto-card:first-child { border-top: none; }
+.projeto-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-rule);
+}
+.projeto-card h2 { margin: 0 0 var(--space-xs); font-size: var(--step-1); }
+.projeto-card p { margin: 0 0 var(--space-xs); }
+
+.projeto-meta {
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+  color: var(--color-graphite);
+}
+.projeto-subtitulo {
+  color: var(--color-graphite);
+  font-size: var(--step-1);
+  margin: 0 0 var(--space-xs);
+}
+
+.projeto-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+.projeto-galeria figure { margin: 0; }
+.projeto-galeria img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-rule);
+  box-shadow: var(--shadow-lift);
+}
+.projeto-galeria figcaption {
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+  color: var(--color-graphite);
+  margin-top: var(--space-xs);
+}
+
+@media (max-width: 640px) {
+  .projeto-card { grid-template-columns: 1fr; }
+}
+
+/* ----------------------------------------------------------------------------
    9. RODAPÉ
    ---------------------------------------------------------------------------- */
 footer {
