@@ -3,9 +3,9 @@ layout: default
 ---
 
 <section class="home-hero">
-  <p class="prompt"><span class="prompt-sig">zd4@zeyverso</span>:~$ cat manifesto.txt</p>
-  <h1 class="hero-titulo">Um dev amante de café escrevendo em público.<span class="cursor">▮</span></h1>
-  <p class="hero-sub">Tecnologia, história e as ideias que não couberam na própria época — um multiverso, um post por vez.</p>
+  <p class="prompt"><span class="prompt-sig">zd4@zeyverso</span>:~$ cat oi.txt</p>
+  <h1 class="hero-titulo" aria-hidden="true"><span class="cursor">▮</span></h1>
+  <p class="hero-sub">Tecnologia, história e as ideias que não pude guardar na minha cabeça.</p>
 </section>
 
 <%
