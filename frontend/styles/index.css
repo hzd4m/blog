@@ -70,18 +70,24 @@
    ---------------------------------------------------------------------------- */
 :root[data-theme="dark"] {
   --color-ink: #ecebe5;          /* texto principal — quase branco, sem ofuscar */
-  --color-paper: #0a0a0a;        /* fundo preto */
-  --color-graphite: #9c9c93;     /* secundário, datas, legendas */
-  --color-rule: #262624;         /* linhas, bordas finas */
-  --color-card: #161614;         /* cartões — leve relevo sobre o preto */
+  --color-paper: #121212;        /* preto suavizado — menos "buraco", mais confortável */
+  --color-graphite: #afafA4;     /* secundário (datas, citações) — legível no escuro */
+  --color-rule: #2e2e2b;         /* linhas, bordas finas */
+  --color-card: #1e1e1c;         /* cartões — relevo claro sobre o fundo */
 
   /* O "âmbar" da marca vira verde no escuro (todos os usos seguem o token) */
-  --color-amber: #3ddc84;        /* acento verde — fósforo de terminal */
-  --color-amber-soft: #3ddc8424; /* verde ~14% — fundos sutis (código inline) */
+  --color-amber: #45d98a;        /* acento verde — um tom menos neon, mais legível */
+  --color-amber-soft: #45d98a1f; /* verde ~12% — fundos sutis */
 
   --shadow-lift: 0 8px 30px rgba(0, 0, 0, 0.5);
 
   color-scheme: dark;
+}
+
+/* No escuro o tint verde do código inline some no fundo: usa um chip neutro.
+   `:not(pre) > code` evita afetar o código dentro dos blocos <pre>. */
+:root[data-theme="dark"] :not(pre) > code {
+  background: #26261f;
 }
 
 /* ----------------------------------------------------------------------------
