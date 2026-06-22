@@ -107,6 +107,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Seleção de texto na cor da marca (âmbar no claro, verde no escuro).
+   Texto fixo escuro pra continuar legível sobre os dois acentos. */
+::selection {
+  background: var(--color-amber);
+  color: #141414;
+}
+
 /* ----------------------------------------------------------------------------
    3. MARCA — header com wordmark "zd4▮" e cursor âmbar piscando
    ---------------------------------------------------------------------------- */
@@ -501,6 +508,47 @@ pre code {
   font-family: var(--font-mono);
   font-size: var(--step-small);
   margin-top: var(--space-sm);
+}
+
+/* ----------------------------------------------------------------------------
+   8d. ASSINATURAS — caret que "pousa" no hover e 404 em modo terminal
+   ---------------------------------------------------------------------------- */
+/* Títulos de post/projeto: em vez do preenchimento âmbar pesado, o título
+   assume o acento e um cursor ▮ "pousa" ao lado, piscando. */
+.item-post h2 a,
+.projeto-card h2 a {
+  background-image: none;
+}
+.item-post h2 a::after,
+.projeto-card h2 a::after {
+  content: "▮";
+  margin-left: 0.15em;
+  color: var(--color-amber);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+.item-post h2 a:hover,
+.projeto-card h2 a:hover {
+  color: var(--color-amber);
+}
+.item-post h2 a:hover::after,
+.projeto-card h2 a:hover::after {
+  opacity: 1;
+  animation: piscar 1.1s steps(1) infinite;
+}
+
+/* Página 404 em saída de terminal */
+.erro-terminal {
+  font-family: var(--font-mono);
+  font-size: var(--step-0);
+  line-height: 1.7;
+  margin: var(--space-xl) 0;
+}
+.erro-terminal .prompt-sig { color: var(--color-amber); }
+.erro-terminal .erro-saida { color: var(--color-graphite); }
+.erro-terminal .cursor {
+  color: var(--color-amber);
+  animation: piscar 1.1s steps(1) infinite;
 }
 
 /* ----------------------------------------------------------------------------

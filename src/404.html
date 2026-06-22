@@ -1,10 +1,16 @@
 ---
 permalink: /404.html
 layout: default
+title: "404"
 ---
 
-<h1>404</h1>
+<section class="erro-terminal">
+  <p><span class="prompt-sig">zd4@zeyverso</span>:~$ cat <span class="erro-rota"></span></p>
+  <p class="erro-saida">cat: página não encontrada: No such file or directory</p>
+  <p><span class="prompt-sig">zd4@zeyverso</span>:~$ <a href="<%= relative_url '/' %>">cd ~</a><span class="cursor">▮</span></p>
+</section>
 
-<h2>Page Not Found :(</h2>
-
-<p>The requested page could not be found.</p>
+<script>
+  // Mostra a rota que o visitante tentou acessar, no estilo do comando.
+  document.querySelector(".erro-rota").textContent = window.location.pathname;
+</script>
