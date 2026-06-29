@@ -2,7 +2,7 @@
 layout: post
 title: "Resolvendo: Queue at the School (266B)"
 date: 2026-06-29 13:00:00 -0300
-categories: [Tecnologia]
+categories: [Resolvendo]
 tags: [competitive-programming, cpp, simulacao, modelagem, estudos]
 description: "Um problema de simulação do Codeforces, onde o segredo não é uma fórmula esperta e sim respeitar a simultaneidade das trocas. Modelagem e resolução em C++ passo a passo."
 ---

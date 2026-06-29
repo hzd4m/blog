@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Estudando o capítulo 3 do Sutton & Barto: o dia que o trânsito virou matemática"
+title: "Estudando: Capítulo 3 do Sutton & Barto — primeiros passos nos Processos de Markov"
 date: 2026-06-29 10:00:00 -0300
-categories: [Tecnologia]
+categories: [Estudando]
 tags: [aprendizado-por-reforco, mdp, fundamentos, iniciantes, estudos]
 description: "Anotações pessoais da leitura do capítulo 3 do livro do Sutton & Barto, onde aprendi o que é um Processo de Decisão de Markov — e por que ele é a língua oficial do aprendizado por reforço."
 ---

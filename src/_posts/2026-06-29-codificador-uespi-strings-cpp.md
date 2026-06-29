@@ -2,7 +2,7 @@
 layout: post
 title: "Resolvendo: Luan e o Codificador da UESPI"
 date: 2026-06-29 11:00:00 -0300
-categories: [Tecnologia]
+categories: [Resolvendo]
 tags: [competitive-programming, cpp, strings, modelagem, estudos]
 description: "Criei um problema de manipulação de strings inspirado no clássico 71A do Codeforces. Aqui mostro a modelagem por trás dele e a resolução em C++ passo a passo."
 ---

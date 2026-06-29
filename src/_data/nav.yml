@@ -6,6 +6,10 @@
 # como `categories: [Nome]`. Dirigem o menu e as páginas de seção.
 # A fiação da navbar lendo isto é tarefa do Sprint C.
 categorias:
+  - nome: Resolvendo
+    slug: resolvendo
+  - nome: Estudando
+    slug: estudando
   - nome: Tecnologia
     slug: tecnologia
   - nome: Política

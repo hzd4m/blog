@@ -36,7 +36,7 @@ layout: default
 <h2 class="home-secao-titulo">Prateleiras</h2>
 <ul class="home-chips">
   <% (site.data.nav&.dig("categorias") || []).each do |cat| %>
-    <li><a href="<%= relative_url '/posts' %>"><%= cat["nome"] %></a></li>
+    <li><a href="<%= relative_url('/posts') + '#' + cat['slug'] %>"><%= cat["nome"] %></a></li>
   <% end %>
   <li><a href="<%= relative_url '/projetos/' %>">Projetos</a></li>
 </ul>

@@ -2,7 +2,7 @@
 layout: post
 title: "Resolvendo: Luan e o Time de Treinamento"
 date: 2026-06-29 12:00:00 -0300
-categories: [Tecnologia]
+categories: [Resolvendo]
 tags: [competitive-programming, cpp, modelagem, condicionais, estudos]
 description: "Outra variação autoral, dessa vez inspirada no clássico 231A do Codeforces. Mostro como modelar uma decisão com duas condições sem cair nas armadilhas e resolvo em C++ passo a passo."
 ---
