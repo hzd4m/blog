@@ -60,7 +60,7 @@ if (soma > 1 && p != 2) {
 }
 ```
 
-Vale notar que eu escrevi `soma > 1` em vez de `soma >= 2` — dá no mesmo, já que `soma` é inteiro, mas é justamente onde mora a pegadinha clássica desse tipo de problema: confundir "pelo menos dois" (`>= 2`) com "mais de dois" (`> 2`). Aqui está correto, mas é o ponto que eu mais reviso.
+Vale notar que eu escrevi `soma > 1` em vez de `soma >= 2` — dá no mesmo, já que `soma` é inteiro, mas é justamente onde mora a pegadinha clássica desse tipo de problema: confundir "pelo menos dois" (`>= 2`) com "mais de dois" (`> 2`).
 
 No fim, só imprimo o acumulador:
 
