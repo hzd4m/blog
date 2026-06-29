@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Codificador da UESPI: modelando um problema autoral de strings e resolvendo em C++"
+title: "Resolvendo: Luan e o Codificador da UESPI"
 date: 2026-06-29 11:00:00 -0300
 categories: [Tecnologia]
 tags: [competitive-programming, cpp, strings, modelagem, estudos]
