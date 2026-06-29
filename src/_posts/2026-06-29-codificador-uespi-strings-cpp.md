@@ -7,7 +7,7 @@ tags: [competitive-programming, cpp, strings, modelagem, estudos]
 description: "Criei um problema de manipulação de strings inspirado no clássico 71A do Codeforces. Aqui mostro a modelagem por trás dele e a resolução em C++ passo a passo."
 ---
 
-Criei o "Luan e o Codificador da UESPI" como uma variação autoral do clássico *A. Way Too Long Words* (71A) do Codeforces — peguei a base de abreviar palavras longas e adicionei uma camada de cifra pra forçar mais atenção com strings. O enunciado completo está no `questao.md` e a resolução no `main.cpp`.
+Criei o "Luan e o Codificador da UESPI" como uma variação autoral do clássico *A. Way Too Long Words* (71A) do Codeforces — peguei a base de abreviar palavras longas e adicionei uma camada de cifra pra forçar mais atenção com strings. O enunciado completo está no [`questao.md`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/71A_Luan_Cifra_BD/questao.md) e a resolução no [`main.cpp`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/71A_Luan_Cifra_BD/main.cpp).
 
 Quero ir direto ao ponto: primeiro a modelagem, depois o código.
 
@@ -111,6 +111,6 @@ Memória: O(L)
 
 Com `n ≤ 100` e `L ≤ 100`, passa folgado. O desafio aqui nunca foi performance — foi modelar a separação entre o dado original e o resultado intermediário. Quando essa fronteira fica clara na cabeça, o código praticamente se escreve sozinho.
 
-O enunciado está no `questao.md` e a solução completa no `main.cpp`. Fica o convite: tente modelar antes de olhar a resolução.
+O enunciado está no [`questao.md`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/71A_Luan_Cifra_BD/questao.md) e a solução completa no [`main.cpp`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/71A_Luan_Cifra_BD/main.cpp). Fica o convite: tente modelar antes de olhar a resolução.
 
 zd4▮
