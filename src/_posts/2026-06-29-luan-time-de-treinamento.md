@@ -7,7 +7,7 @@ tags: [competitive-programming, cpp, modelagem, condicionais, estudos]
 description: "Outra variação autoral, dessa vez inspirada no clássico 231A do Codeforces. Mostro como modelar uma decisão com duas condições sem cair nas armadilhas e resolvo em C++ passo a passo."
 ---
 
-Mais um problema que eu mesmo criei. O "Luan e o Time de Treinamento" é uma variação autoral do clássico *A. Team* (231A) do Codeforces — peguei a ideia de "votação de três pessoas" e acrescentei uma segunda condição pra obrigar o leitor a montar uma regra composta. O enunciado está no `questao.md` e a resolução no `main.cpp`.
+Mais um problema que eu mesmo criei. O "Luan e o Time de Treinamento" é uma variação autoral do clássico *A. Team* (231A) do Codeforces — peguei a ideia de "votação de três pessoas" e acrescentei uma segunda condição pra obrigar o leitor a montar uma regra composta. O enunciado está no [`questao.md`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/231A_Luan_Competicao_Prova/questao.md) e a resolução no [`main.cpp`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/231A_Luan_Competicao_Prova/main.cpp).
 
 Direto ao ponto: modelagem primeiro, código depois.
 
@@ -97,6 +97,6 @@ Não guardo nada além do contador. Com `n ≤ 1000`, sobra folga de qualquer fo
 
 O foco aqui nunca foi algoritmo, e sim modelar uma decisão com duas condições sem cair nas duas armadilhas: tratar risco médio como proibido, ou confundir "pelo menos dois" com "mais de dois". Quando a regra fica clara em uma linha, o resto é só um acumulador.
 
-Enunciado no `questao.md`, solução no `main.cpp`. Tente modelar a condição antes de olhar a resposta.
+Enunciado no [`questao.md`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/231A_Luan_Competicao_Prova/questao.md), solução no [`main.cpp`](https://github.com/hzd4m/algoritmos/blob/main/uespi/extra/semana_1/231A_Luan_Competicao_Prova/main.cpp). Tente modelar a condição antes de olhar a resposta.
 
 zd4▮
