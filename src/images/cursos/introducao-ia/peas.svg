@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img" aria-label="Esquema PEAS: Performance (desempenho), Environment (ambiente), Actuators (atuadores), Sensors (sensores).">
+  <rect x="2" y="2" width="756" height="246" rx="16" fill="#0d1117" stroke="#232a33"/>
+  <text x="24" y="38" fill="#e6edf3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700">PEAS — o enunciado do ambiente de tarefa</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <!-- P -->
+    <rect x="24" y="66" width="167" height="158" rx="10" fill="#161b22" stroke="#232a33"/>
+    <text x="40" y="118" fill="#f2760c" font-size="40" font-weight="800">P</text>
+    <text x="40" y="150" fill="#e6edf3" font-size="15" font-weight="700">Performance</text>
+    <text x="40" y="170" fill="#9aa4b2" font-size="12.5">Desempenho:</text>
+    <text x="40" y="188" fill="#9aa4b2" font-size="12.5">o que conta</text>
+    <text x="40" y="206" fill="#9aa4b2" font-size="12.5">como sucesso.</text>
+
+    <!-- E -->
+    <rect x="205" y="66" width="167" height="158" rx="10" fill="#161b22" stroke="#232a33"/>
+    <text x="221" y="118" fill="#f2760c" font-size="40" font-weight="800">E</text>
+    <text x="221" y="150" fill="#e6edf3" font-size="15" font-weight="700">Environment</text>
+    <text x="221" y="170" fill="#9aa4b2" font-size="12.5">Ambiente:</text>
+    <text x="221" y="188" fill="#9aa4b2" font-size="12.5">onde o agente</text>
+    <text x="221" y="206" fill="#9aa4b2" font-size="12.5">atua.</text>
+
+    <!-- A -->
+    <rect x="386" y="66" width="167" height="158" rx="10" fill="#161b22" stroke="#232a33"/>
+    <text x="402" y="118" fill="#f2760c" font-size="40" font-weight="800">A</text>
+    <text x="402" y="150" fill="#e6edf3" font-size="15" font-weight="700">Actuators</text>
+    <text x="402" y="170" fill="#9aa4b2" font-size="12.5">Atuadores:</text>
+    <text x="402" y="188" fill="#9aa4b2" font-size="12.5">como o agente</text>
+    <text x="402" y="206" fill="#9aa4b2" font-size="12.5">age.</text>
+
+    <!-- S -->
+    <rect x="567" y="66" width="167" height="158" rx="10" fill="#161b22" stroke="#232a33"/>
+    <text x="583" y="118" fill="#f2760c" font-size="40" font-weight="800">S</text>
+    <text x="583" y="150" fill="#e6edf3" font-size="15" font-weight="700">Sensors</text>
+    <text x="583" y="170" fill="#9aa4b2" font-size="12.5">Sensores:</text>
+    <text x="583" y="188" fill="#9aa4b2" font-size="12.5">como o agente</text>
+    <text x="583" y="206" fill="#9aa4b2" font-size="12.5">percebe.</text>
+  </g>
+</svg>

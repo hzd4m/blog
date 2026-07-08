@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 402" role="img" aria-label="As sete dimensões que classificam um ambiente de tarefa, do polo mais fácil ao mais difícil.">
+  <defs>
+    <linearGradient id="ge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5bb98b"/>
+      <stop offset="1" stop-color="#f2760c"/>
+    </linearGradient>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#f2760c"/></marker>
+  </defs>
+  <rect x="2" y="2" width="756" height="398" rx="16" fill="#0d1117" stroke="#232a33"/>
+  <text x="24" y="36" fill="#e6edf3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700">As sete dimensões do ambiente</text>
+
+  <text x="292" y="60" fill="#5bb98b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5" font-weight="600">mais fácil</text>
+  <text x="470" y="60" fill="#f2760c" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5" font-weight="600" text-anchor="end">mais difícil</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <!-- rows: left(green) | bar | right(orange) -->
+    <!-- 1 -->
+    <text x="278" y="87" fill="#9fe0bf" text-anchor="end">Completamente observável</text>
+    <rect x="292" y="80" width="180" height="7" rx="3.5" fill="url(#ge)"/>
+    <line x1="472" y1="83.5" x2="486" y2="83.5" stroke="#f2760c" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="494" y="87" fill="#f0a875">Parcialmente observável</text>
+    <!-- 2 -->
+    <text x="278" y="130" fill="#9fe0bf" text-anchor="end">Agente único</text>
+    <rect x="292" y="123" width="180" height="7" rx="3.5" fill="url(#ge)"/>
+    <line x1="472" y1="126.5" x2="486" y2="126.5" stroke="#f2760c" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="494" y="130" fill="#f0a875">Multiagente</text>
+    <!-- 3 -->
+    <text x="278" y="173" fill="#9fe0bf" text-anchor="end">Determinístico</text>
+    <rect x="292" y="166" width="180" height="7" rx="3.5" fill="url(#ge)"/>
+    <line x1="472" y1="169.5" x2="486" y2="169.5" stroke="#f2760c" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="494" y="173" fill="#f0a875">Estocástico</text>
+    <!-- 4 -->
+    <text x="278" y="216" fill="#9fe0bf" text-anchor="end">Episódico</text>
+    <rect x="292" y="209" width="180" height="7" rx="3.5" fill="url(#ge)"/>
+    <line x1="472" y1="212.5" x2="486" y2="212.5" stroke="#f2760c" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="494" y="216" fill="#f0a875">Sequencial</text>
+    <!-- 5 -->
+    <text x="278" y="259" fill="#9fe0bf" text-anchor="end">Estático</text>
+    <rect x="292" y="252" width="180" height="7" rx="3.5" fill="url(#ge)"/>
+    <line x1="472" y1="255.5" x2="486" y2="255.5" stroke="#f2760c" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="494" y="259" fill="#f0a875">Dinâmico</text>
+    <!-- 6 -->
+    <text x="278" y="302" fill="#9fe0bf" text-anchor="end">Discreto</text>
+    <rect x="292" y="295" width="180" height="7" rx="3.5" fill="url(#ge)"/>
+    <line x1="472" y1="298.5" x2="486" y2="298.5" stroke="#f2760c" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="494" y="302" fill="#f0a875">Contínuo</text>
+    <!-- 7 -->
+    <text x="278" y="345" fill="#9fe0bf" text-anchor="end">Conhecido</text>
+    <rect x="292" y="338" width="180" height="7" rx="3.5" fill="url(#ge)"/>
+    <line x1="472" y1="341.5" x2="486" y2="341.5" stroke="#f2760c" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="494" y="345" fill="#f0a875">Desconhecido</text>
+  </g>
+
+  <text x="24" y="382" fill="#6b7480" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5">O mundo real (dirigir um táxi) tem quase todas as dimensões no polo difícil ao mesmo tempo.</text>
+</svg>
