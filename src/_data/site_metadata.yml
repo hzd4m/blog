@@ -7,5 +7,11 @@
 title: ZeYVerso
 tagline: MultiVerso de um dev amante de café.
 email: h.zeid4m@gmail.com
+github: https://github.com/hzd4m
 description: >-
   Bem-vindo ao Blog do Zd4! Aqui você encontrará artigos, tutoriais e insights sobre tecnologia, programação e outras coisas interessantes. Meu objetivo é compartilhar conhecimento e experiências para ajudar outros desenvolvedores e amantes da tecnologia. Fique à vontade para explorar o conteúdo e entrar em contato comigo.
+
+# Licença do conteúdo do blog (textos, livros, cursos).
+licenca:
+  nome: "CC BY-NC-SA 4.0"
+  url: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br"

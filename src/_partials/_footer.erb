@@ -1,4 +1,13 @@
 <footer>
-  Escrito por Zd4 · <a href="mailto:<%= metadata.email %>"><%= metadata.email %></a><br>
-  Feito com Bridgetown · conteúdo livre, sirva-se à vontade.
+  <p class="footer-links">
+    <a href="<%= metadata.github %>" rel="me noopener">GitHub</a>
+    &middot;
+    <a href="mailto:<%= metadata.email %>"><%= metadata.email %></a>
+  </p>
+  <p class="footer-legal">
+    Escrito por Zd4 &middot; feito com Bridgetown<br>
+    Conteúdo sob a licença
+    <a href="<%= metadata.licenca.url %>" rel="license"><%= metadata.licenca.nome %></a>
+    — compartilhe e adapte com crédito, sem uso comercial.
+  </p>
 </footer>
