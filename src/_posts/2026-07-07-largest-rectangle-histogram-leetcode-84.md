@@ -64,7 +64,7 @@ O problema é achar que dá pra resolver isso com uma passada linear ingênua, c
 - **Histórico perdido.** Quando a altura cai pra um valor menor, essa barra baixa consegue se estender pra trás **por cima** de várias barras antigas que eram mais altas que ela. Comparando só com a vizinha, eu não tenho como saber até onde.
 - **A saída fácil vira O(N²).** Sem uma forma estruturada de "olhar pra trás", a alternativa é testar todo par início/fim — `O(N²)`, que dá **TLE** com `N = 10^5`.
 
-Ou seja: o erro não foi de digitação. Foi de modelagem. Eu estava fazendo a pergunta errada.
+
 
 ## Fui ver como se resolve: "quem limita o meu retângulo?"
 
@@ -181,6 +181,6 @@ Memória: O(N)
 
 Sobre o tempo: mesmo tendo um `while` dentro do `for`, cada índice entra na pilha **exatamente uma vez** e sai **no máximo uma vez**. O total de operações de pilha na execução inteira é limitado a `2N`, então é linear de verdade. A memória é a própria pilha, que no pior caso (histograma sempre subindo) guarda os `N` índices.
 
-O que eu levo desse problema: o meu bug não estava em nenhum detalhe do código. Era a pergunta. Enquanto eu tentava fazer o retângulo *crescer* barra a barra, o problema era impossível de fechar em tempo linear. Travei, e em vez de ficar teimando eu fui estudar a solução — e o que ela me ensinou não foi um truque de pilha, foi trocar a pergunta pra "quem limita cada barra?". Com a pergunta certa, a pilha monotônica é quase consequência. Não teve sacada minha de gênio aqui; teve a humildade de ir ver como se faz e o cuidado de entender pra valer. Às vezes consertar a modelagem vale mais que consertar dez linhas de código.
+No fim, o bug não estava no código — estava na pergunta. Travei, fui estudar a solução, e o pulo do gato foi trocar "como o retângulo cresce?" por "quem limita cada barra?". Com a pergunta certa, a pilha monotônica vem quase de graça.
 
 zd4▮
