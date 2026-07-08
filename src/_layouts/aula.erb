@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+<%
+  curso = collections.cursos.resources.find { |c| c.data.slug == data.curso_slug }
+
+  aulas_do_curso = collections.aulas.resources
+                     .select { |a| a.data.curso_slug == data.curso_slug }
+                     .sort_by { |a| a.data.ordem.to_i }
+
+  ordem_atual = data.ordem.to_i
+  indice_atual = aulas_do_curso.find_index { |a| a.data.ordem.to_i == ordem_atual }
+
+  anterior = (indice_atual && indice_atual > 0) ? aulas_do_curso[indice_atual - 1] : nil
+  proximo  = (indice_atual && indice_atual < aulas_do_curso.length - 1) ? aulas_do_curso[indice_atual + 1] : nil
+%>
+
+<style>
+  .aula__video {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    margin: 1.5rem 0;
+    background: #000;
+  }
+  .aula__video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>
+
+<article class="capitulo aula">
+
+  <nav class="breadcrumb">
+    <a href="<%= relative_url '/cursos/' %>">Cursos</a>
+    &rsaquo;
+    <% if curso %>
+      <a href="<%= curso.relative_url %>"><%= curso.data.title %></a>
+      &rsaquo;
+    <% end %>
+    <span>Aula <%= data.ordem %></span>
+  </nav>
+
+  <header class="capitulo__cabecalho">
+    <h1><%= data.title %></h1>
+    <% if data.tempo_leitura %>
+      <p class="capitulo__tempo">
+        Tempo: <strong><%= data.tempo_leitura %></strong>
+      </p>
+    <% end %>
+  </header>
+
+  <% if data.video_youtube %>
+    <div class="aula__video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/<%= data.video_youtube %>"
+        title="<%= data.title %>"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  <% end %>
+
+  <div class="capitulo__conteudo">
+    <%= yield %>
+  </div>
+
+  <footer class="capitulo__rodape">
+    <nav class="capitulo__nav">
+      <% if anterior %>
+        <a href="<%= anterior.relative_url %>">
+          &larr; <%= anterior.data.title %>
+        </a>
+      <% else %>
+        <span></span>
+      <% end %>
+
+      <% if proximo %>
+        <a href="<%= proximo.relative_url %>" class="is-proximo">
+          <%= proximo.data.title %> &rarr;
+        </a>
+      <% else %>
+        <span></span>
+      <% end %>
+    </nav>
+
+    <p class="capitulo__voltar">
+      <% if curso %>
+        <a href="<%= curso.relative_url %>">&uarr; Voltar às aulas de <%= curso.data.title %></a>
+      <% else %>
+        <a href="<%= relative_url '/cursos/' %>">&uarr; Todos os cursos</a>
+      <% end %>
+    </p>
+  </footer>
+</article>

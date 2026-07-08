@@ -17,3 +17,14 @@ collections:
     output: true
     permalink: /projetos/:slug/
     sort_by: ordem
+  cursos:
+    output: true
+    permalink: /cursos/:slug/
+    sort_by: ordem
+  aulas:
+    output: true
+    permalink: /cursos/:curso_slug/:slug/
+    sort_by: ordem
+  recomendacoes:
+    output: false
+    sort_by: data
