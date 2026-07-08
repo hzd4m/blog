@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-label="Diagrama do laço agente-ambiente: o agente age sobre o ambiente por atuadores e percebe o ambiente por sensores, em ciclo.">
+  <defs>
+    <marker id="ah-o" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#f2760c"/>
+    </marker>
+    <marker id="ah-g" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#7d8896"/>
+    </marker>
+  </defs>
+
+  <rect x="2" y="2" width="756" height="296" rx="16" fill="#0d1117" stroke="#232a33"/>
+  <text x="24" y="38" fill="#e6edf3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700">O agente e seu ambiente</text>
+
+  <!-- Agente -->
+  <rect x="60" y="104" width="210" height="120" rx="12" fill="#1b160e" stroke="#f2760c" stroke-width="2"/>
+  <text x="165" y="150" fill="#ffffff" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">AGENTE</text>
+  <text x="165" y="176" fill="#d9c4a6" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" text-anchor="middle">percebe, decide</text>
+  <text x="165" y="194" fill="#d9c4a6" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" text-anchor="middle">e age</text>
+
+  <!-- Ambiente -->
+  <rect x="490" y="104" width="210" height="120" rx="12" fill="#161b22" stroke="#232a33"/>
+  <text x="595" y="150" fill="#e6edf3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">AMBIENTE</text>
+  <text x="595" y="176" fill="#9aa4b2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" text-anchor="middle">o mundo em que</text>
+  <text x="595" y="194" fill="#9aa4b2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" text-anchor="middle">o agente atua</text>
+
+  <!-- top arrow: agente -> ambiente (ações) -->
+  <path d="M270,138 C360,110 400,110 488,138" fill="none" stroke="#f2760c" stroke-width="2" marker-end="url(#ah-o)"/>
+  <text x="380" y="104" fill="#f2760c" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">ações · atuadores →</text>
+
+  <!-- bottom arrow: ambiente -> agente (percepções) -->
+  <path d="M488,190 C400,218 360,218 272,190" fill="none" stroke="#7d8896" stroke-width="2" marker-end="url(#ah-g)"/>
+  <text x="380" y="238" fill="#9aa4b2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">← percepções · sensores</text>
+
+  <text x="380" y="276" fill="#6b7480" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5" text-anchor="middle">Ser racional = escolher a ação que maximiza o desempenho esperado, dado o que se percebeu.</text>
+</svg>

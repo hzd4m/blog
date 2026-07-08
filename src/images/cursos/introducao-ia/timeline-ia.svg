@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-label="Linha do tempo da IA: 1943 gestação, 1956 Dartmouth, 1969 primeiro inverno, anos 1980 sistemas especialistas, 1986 conexionismo, 2012 aprendizado profundo, 2017 Transformer, 2022 ChatGPT, 2025 raciocínio e agentes.">
+  <rect x="2" y="2" width="896" height="296" rx="16" fill="#0d1117" stroke="#232a33"/>
+  <text x="24" y="36" fill="#e6edf3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700">Uma breve história da IA</text>
+  <text x="24" y="55" fill="#9aa4b2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">ondas de entusiasmo e correção de rota — não uma linha reta</text>
+
+  <!-- axis -->
+  <line x1="48" y1="158" x2="852" y2="158" stroke="#3a434f" stroke-width="2"/>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif" text-anchor="middle">
+    <!-- 1 (above) 1943 -->
+    <line x1="70" y1="158" x2="70" y2="120" stroke="#3a434f"/>
+    <circle cx="70" cy="158" r="5" fill="#9aa4b2"/>
+    <text x="70" y="112" fill="#c9d1d9" font-size="13" font-weight="700">1943</text>
+    <text x="70" y="96" fill="#9aa4b2" font-size="11">Gestação</text>
+
+    <!-- 2 (below) 1956 -->
+    <line x1="168" y1="158" x2="168" y2="196" stroke="#3a434f"/>
+    <circle cx="168" cy="158" r="5" fill="#9aa4b2"/>
+    <text x="168" y="214" fill="#c9d1d9" font-size="13" font-weight="700">1956</text>
+    <text x="168" y="230" fill="#9aa4b2" font-size="11">Dartmouth:</text>
+    <text x="168" y="244" fill="#9aa4b2" font-size="11">nasce a "IA"</text>
+
+    <!-- 3 (above) 1969 inverno -->
+    <line x1="266" y1="158" x2="266" y2="120" stroke="#3a434f"/>
+    <circle cx="266" cy="158" r="5" fill="#4a90d9"/>
+    <text x="266" y="112" fill="#8ab6e6" font-size="13" font-weight="700">1969</text>
+    <text x="266" y="96" fill="#6f9bc4" font-size="11">❄ 1º inverno</text>
+
+    <!-- 4 (below) 1980s -->
+    <line x1="364" y1="158" x2="364" y2="196" stroke="#3a434f"/>
+    <circle cx="364" cy="158" r="5" fill="#9aa4b2"/>
+    <text x="364" y="214" fill="#c9d1d9" font-size="13" font-weight="700">1980s</text>
+    <text x="364" y="230" fill="#9aa4b2" font-size="11">Sist. especialistas</text>
+    <text x="364" y="244" fill="#6f9bc4" font-size="11">→ ❄ 2º inverno</text>
+
+    <!-- 5 (above) 1986 -->
+    <line x1="462" y1="158" x2="462" y2="120" stroke="#3a434f"/>
+    <circle cx="462" cy="158" r="5" fill="#9aa4b2"/>
+    <text x="462" y="112" fill="#c9d1d9" font-size="13" font-weight="700">1986</text>
+    <text x="462" y="96" fill="#9aa4b2" font-size="11">Conexionismo</text>
+
+    <!-- 6 (below) 2012 -->
+    <line x1="560" y1="158" x2="560" y2="196" stroke="#f2760c"/>
+    <circle cx="560" cy="158" r="5.5" fill="#f2760c"/>
+    <text x="560" y="214" fill="#f2760c" font-size="13" font-weight="700">2012</text>
+    <text x="560" y="230" fill="#d9a066" font-size="11">Deep learning</text>
+    <text x="560" y="244" fill="#9aa4b2" font-size="11">(AlexNet)</text>
+
+    <!-- 7 (above) 2017 -->
+    <line x1="658" y1="158" x2="658" y2="120" stroke="#f2760c"/>
+    <circle cx="658" cy="158" r="5.5" fill="#f2760c"/>
+    <text x="658" y="112" fill="#f2760c" font-size="13" font-weight="700">2017</text>
+    <text x="658" y="96" fill="#d9a066" font-size="11">Transformer</text>
+
+    <!-- 8 (below) 2022 -->
+    <line x1="756" y1="158" x2="756" y2="196" stroke="#f2760c"/>
+    <circle cx="756" cy="158" r="5.5" fill="#f2760c"/>
+    <text x="756" y="214" fill="#f2760c" font-size="13" font-weight="700">2022</text>
+    <text x="756" y="230" fill="#d9a066" font-size="11">ChatGPT</text>
+    <text x="756" y="244" fill="#9aa4b2" font-size="11">(LLMs)</text>
+
+    <!-- 9 (above) 2025 -->
+    <line x1="840" y1="158" x2="840" y2="120" stroke="#f2760c"/>
+    <circle cx="840" cy="158" r="5.5" fill="#f2760c"/>
+    <text x="840" y="112" fill="#f2760c" font-size="13" font-weight="700">2025</text>
+    <text x="840" y="96" fill="#d9a066" font-size="11">Raciocínio</text>
+    <text x="840" y="80" fill="#d9a066" font-size="11">+ agentes</text>
+  </g>
+</svg>

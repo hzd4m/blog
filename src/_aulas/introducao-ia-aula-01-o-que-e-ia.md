@@ -39,6 +39,11 @@ Não existe uma definição única e consensual de inteligência — nem para hu
 
 Cruzando os dois eixos — *humano × racional* e *pensamento × comportamento* — obtemos a matriz que estruturou o campo.
 
+<figure>
+  <img src="/blog/images/cursos/introducao-ia/matriz-4-enfoques.svg" alt="Matriz 2×2 dos quatro enfoques da IA: pensar/agir como humano e pensar/agir racionalmente." style="width:100%;height:auto">
+  <figcaption style="font-size:.85rem;text-align:center;opacity:.7">A matriz que organizou o campo — a Seção 3 destrincha cada quadrante.</figcaption>
+</figure>
+
 ## 3. Os quatro enfoques da IA
 
 |  | Fidelidade ao humano | Racionalidade ("fazer o certo") |
@@ -48,13 +53,13 @@ Cruzando os dois eixos — *humano × racional* e *pensamento × comportamento* 
 
 ### 3.1 Agir como humano — o Teste de Turing
 
-Em 1950, Alan Turing propôs contornar a pergunta "as máquinas podem pensar?" por um teste operacional: uma máquina é considerada inteligente se um interrogador humano, conversando por texto, não conseguir distingui-la de uma pessoa. Para passar nesse teste, uma máquina precisaria dominar **processamento de linguagem natural**, **representação de conhecimento**, **raciocínio automatizado** e **aprendizado de máquina**. O "Teste de Turing total" acrescenta a capacidade de perceber e manipular o mundo físico, exigindo também **visão computacional** e **robótica**. Não por acaso, essas seis capacidades correspondem, grosso modo, às grandes subáreas da IA.
+Em 1950, [Alan Turing propôs](https://doi.org/10.1093/mind/LIX.236.433) contornar a pergunta "as máquinas podem pensar?" por um teste operacional: uma máquina é considerada inteligente se um interrogador humano, conversando por texto, não conseguir distingui-la de uma pessoa. Para passar nesse teste, uma máquina precisaria dominar **processamento de linguagem natural**, **representação de conhecimento**, **raciocínio automatizado** e **aprendizado de máquina**. O "Teste de Turing total" acrescenta a capacidade de perceber e manipular o mundo físico, exigindo também **visão computacional** e **robótica**. Não por acaso, essas seis capacidades correspondem, grosso modo, às grandes subáreas da IA.
 
 > **Nuance — imitar não é o objetivo de engenharia.** Turing foi visionário, mas "parecer humano" raramente é a meta prática. A analogia clássica: a engenharia aeronáutica não busca construir máquinas que voem "tão parecido com pombos que enganem outros pombos". Buscamos *voar bem*, não imitar aves. Do mesmo modo, buscamos *agir de modo inteligente*, não necessariamente imitar pessoas. Por isso o Teste de Turing, embora célebre, não guia a construção da maioria dos sistemas modernos.
 
 ### 3.2 Pensar como humano — a modelagem cognitiva
 
-Se o objetivo é fazer a máquina pensar *como* um humano, primeiro é preciso saber como humanos pensam — via introspecção, experimentos psicológicos e, hoje, neuroimagem. Essa é a interface entre a IA e a **ciência cognitiva**: modelos computacionais são usados tanto para construir sistemas úteis quanto para testar teorias sobre a mente. Programas pioneiros como o *General Problem Solver* (Newell e Simon) não se contentavam em resolver problemas: buscavam reproduzir a *sequência* de passos que um humano seguiria. É um enfoque legítimo, mas seu objetivo — entender a cognição humana — difere do objetivo de engenharia de construir o melhor sistema possível.
+Se o objetivo é fazer a máquina pensar *como* um humano, primeiro é preciso saber como humanos pensam — via introspecção, experimentos psicológicos e, hoje, neuroimagem. Essa é a interface entre a IA e a **ciência cognitiva**: modelos computacionais são usados tanto para construir sistemas úteis quanto para testar teorias sobre a mente. Programas pioneiros como o [*General Problem Solver*](https://en.wikipedia.org/wiki/General_Problem_Solver) (Newell e Simon) não se contentavam em resolver problemas: buscavam reproduzir a *sequência* de passos que um humano seguiria. É um enfoque legítimo, mas seu objetivo — entender a cognição humana — difere do objetivo de engenharia de construir o melhor sistema possível.
 
 ### 3.3 Pensar racionalmente — as "leis do pensamento"
 
@@ -70,7 +75,7 @@ Um **agente** é algo que percebe seu ambiente e age sobre ele. Um **agente raci
 - **É mais geral do que as "leis do pensamento".** A inferência lógica correta é *uma* forma de ser racional, mas não a única: há ações racionais que não passam por deliberação explícita (um reflexo de retirar a mão do fogo é racional sem ser fruto de um silogismo). Agir racionalmente engloba raciocinar corretamente como caso particular, e vai além.
 - **É mais adequado ao desenvolvimento científico.** A racionalidade é definida por um padrão externo e mensurável — uma **medida de desempenho** —, ao passo que "ser humano" é um alvo mal definido e variável. Isso permite formular a IA como um problema de otimização bem posto.
 
-> **Nuance — racionalidade limitada.** A racionalidade *perfeita* — sempre escolher a ação ótima — é inviável em ambientes complexos, porque exigiria recursos computacionais ilimitados. Na prática, buscamos **racionalidade limitada** (Herbert Simon): agir tão bem quanto possível com o tempo, a informação e a capacidade de cálculo disponíveis. Esse realismo — "fazer o melhor que dá com o que se tem" — é o que torna a IA uma disciplina de engenharia, e não apenas um ideal filosófico.
+> **Nuance — racionalidade limitada.** A racionalidade *perfeita* — sempre escolher a ação ótima — é inviável em ambientes complexos, porque exigiria recursos computacionais ilimitados. Na prática, buscamos **[racionalidade limitada](https://en.wikipedia.org/wiki/Bounded_rationality)** (Herbert Simon): agir tão bem quanto possível com o tempo, a informação e a capacidade de cálculo disponíveis. Esse realismo — "fazer o melhor que dá com o que se tem" — é o que torna a IA uma disciplina de engenharia, e não apenas um ideal filosófico.
 
 > **Definição de trabalho.** Neste curso, **Inteligência Artificial é o estudo e a construção de agentes que percebem seu ambiente e agem de modo a maximizar suas chances de atingir seus objetivos** — isto é, agentes que agem racionalmente. Essa escolha é o que unifica busca, lógica, probabilidade e decisão sob um mesmo teto.
 
@@ -93,26 +98,31 @@ A IA não nasceu do nada: é herdeira de séculos de investigação em várias �
 
 A trajetória da IA não é uma linha reta ascendente, e sim uma sucessão de ondas de otimismo seguidas de correções de rota. Entender esse ritmo evita tanto o deslumbramento quanto o ceticismo fácil.
 
-- **1943–55 — Gestação.** McCulloch e Pitts propõem um modelo matemático de neurônio (1943); Hebb formula uma regra de aprendizado (1949); Turing publica "Computing Machinery and Intelligence" (1950) e o seu teste; Minsky e Edmonds constroem o SNARC, um precursor de rede neural.
-- **1956 — Nascimento.** No workshop de **Dartmouth**, John McCarthy, Marvin Minsky, Claude Shannon e Nathaniel Rochester cunham o termo *Inteligência Artificial*. Newell e Simon apresentam o *Logic Theorist*, capaz de provar teoremas — a IA nasce como campo.
-- **1956–74 — Entusiasmo e grandes expectativas.** O *General Problem Solver*; o programa de damas de Samuel, que *aprende* a jogar; McCarthy cria a linguagem **LISP** (1958) e concebe o *Advice Taker*; Rosenblatt introduz o *perceptron* (1958); surgem os "micromundos", como o SHRDLU de Winograd. Previsões audaciosas sobre IA em poucos anos proliferam.
-- **1966–73 — Um banho de realidade (1º "inverno").** A tradução automática fracassa; a explosão combinatória derruba métodos que funcionavam em brinquedos, mas não em escala. Minsky e Papert, em *Perceptrons* (1969), expõem os limites do perceptron de camada única e esfriam a pesquisa em redes neurais. Cortes de financiamento seguem (relatório Lighthill, 1973).
+<figure>
+  <img src="/blog/images/cursos/introducao-ia/timeline-ia.svg" alt="Linha do tempo da IA, de 1943 (gestação) a 2025 (raciocínio e agentes), marcando os dois invernos." style="width:100%;height:auto">
+  <figcaption style="font-size:.85rem;text-align:center;opacity:.7">Os grandes marcos e os dois "invernos" — a lista abaixo detalha cada fase.</figcaption>
+</figure>
+
+- **1943–55 — Gestação.** McCulloch e Pitts propõem um modelo matemático de neurônio (1943); Hebb formula uma regra de aprendizado (1949); Turing publica ["Computing Machinery and Intelligence"](https://doi.org/10.1093/mind/LIX.236.433) (1950) e o seu teste; Minsky e Edmonds constroem o SNARC, um precursor de rede neural.
+- **1956 — Nascimento.** No workshop de **[Dartmouth](https://en.wikipedia.org/wiki/Dartmouth_workshop)**, John McCarthy, Marvin Minsky, Claude Shannon e Nathaniel Rochester cunham o termo *Inteligência Artificial*. Newell e Simon apresentam o *Logic Theorist*, capaz de provar teoremas — a IA nasce como campo.
+- **1956–74 — Entusiasmo e grandes expectativas.** O *General Problem Solver*; o programa de damas de Samuel, que *aprende* a jogar; McCarthy cria a linguagem **LISP** (1958) e concebe o *Advice Taker*; Rosenblatt introduz o [*perceptron*](https://en.wikipedia.org/wiki/Perceptron) (1958); surgem os "micromundos", como o SHRDLU de Winograd. Previsões audaciosas sobre IA em poucos anos proliferam.
+- **1966–73 — Um banho de realidade (1º "inverno").** A tradução automática fracassa; a explosão combinatória derruba métodos que funcionavam em brinquedos, mas não em escala. Minsky e Papert, em [*Perceptrons*](https://en.wikipedia.org/wiki/Perceptrons_%28book%29) (1969), expõem os limites do perceptron de camada única e esfriam a pesquisa em redes neurais. Cortes de financiamento seguem (relatório Lighthill, 1973).
 - **1969–86 — Sistemas baseados em conhecimento.** Em vez de métodos gerais e fracos, injeta-se conhecimento especializado: *DENDRAL* (estruturas químicas) e *MYCIN* (diagnóstico médico, já com raciocínio sob incerteza). O sistema *R1/XCON* gera economia real e a IA vira indústria — até o **2º inverno** (fim dos anos 1980), quando as promessas superam a entrega.
-- **1986– — Retorno das redes neurais (conexionismo).** A redescoberta e popularização da *retropropagação* (backpropagation) permite treinar redes de múltiplas camadas, reacendendo a abordagem conexionista adormecida desde 1969.
-- **1987– — A virada científica e probabilística.** A IA adota metodologia empírica rigorosa e benchmarks. Judea Pearl formaliza as *redes bayesianas*; difundem-se os modelos ocultos de Markov (HMM) e o aprendizado estatístico. A IA se reconcilia com a estatística, a teoria de controle e a otimização.
+- **1986– — Retorno das redes neurais (conexionismo).** A redescoberta e popularização da [*retropropagação*](https://en.wikipedia.org/wiki/Backpropagation) (backpropagation) permite treinar redes de múltiplas camadas, reacendendo a abordagem conexionista adormecida desde 1969.
+- **1987– — A virada científica e probabilística.** A IA adota metodologia empírica rigorosa e benchmarks. Judea Pearl formaliza as [*redes bayesianas*](https://en.wikipedia.org/wiki/Bayesian_network); difundem-se os modelos ocultos de Markov (HMM) e o aprendizado estatístico. A IA se reconcilia com a estatística, a teoria de controle e a otimização.
 - **2001– — A era dos dados.** Percebe-se a "eficácia irracional dos dados": com conjuntos suficientemente grandes, algoritmos simples muitas vezes superam algoritmos sofisticados com poucos dados. Os dados passam a importar tanto quanto os modelos.
-- **2011– — Aprendizado profundo (deep learning).** A combinação de GPUs, grandes bases e redes profundas destrava avanços dramáticos. Em **2012**, a rede AlexNet vence a competição ImageNet por larga margem e dispara a revolução do deep learning em visão e fala.
+- **2011– — Aprendizado profundo (deep learning).** A combinação de GPUs, grandes bases e redes profundas destrava avanços dramáticos. Em **2012**, a rede [AlexNet](https://en.wikipedia.org/wiki/AlexNet) vence a competição ImageNet por larga margem e dispara a revolução do deep learning em visão e fala.
 
 ## 6. Do aprendizado profundo aos LLMs
 
 O capítulo 1 do AIMA foi escrito antes do que talvez seja a década mais transformadora da IA. Esta seção estende a história até o presente — é justamente onde a nossa disciplina conecta o clássico ao estado da arte.
 
-- **2012–2016 — a ascensão do profundo.** Redes convolucionais passam a dominar a visão; redes recorrentes (LSTM) e modelos *sequência-a-sequência* avançam tradução e reconhecimento de fala. O aprendizado por reforço profundo aprende a jogar videogames a partir de pixels e, em **2016**, o *AlphaGo* derrota um dos maiores jogadores humanos de Go — feito então considerado a uma década de distância. A receita — busca em árvore (MCTS) somada a redes profundas e aprendizado por reforço — é um gancho direto para a nossa Unidade 2.
-- **2017 — o Transformer.** O artigo *"Attention Is All You Need"* introduz a arquitetura **Transformer**, baseada em mecanismos de *atenção*. Ela destrava o treinamento paralelo em escala massiva e se torna o alicerce de quase toda a IA de linguagem que veio depois.
-- **2018–2020 — pré-treinamento e escala.** Modelos como BERT e a família GPT popularizam o *pré-treinamento* em grandes corpora seguido de ajuste fino. As *leis de escala* mostram que aumentar dados, parâmetros e cálculo melhora o desempenho de forma previsível. O GPT-3 (2020) exibe *aprendizado com poucos exemplos* — resolver tarefas novas a partir de instruções, sem re-treino.
-- **2022 — a IA generativa chega ao público.** O *ajuste por instrução* e o **aprendizado por reforço a partir de feedback humano** (RLHF) alinham os modelos ao uso conversacional. O lançamento do ChatGPT leva os modelos de linguagem de larga escala (**LLMs**) ao cotidiano de centenas de milhões de pessoas.
-- **2023–2024 — multimodalidade, contexto longo e ciência.** Modelos passam a processar texto, imagem, áudio e vídeo de forma integrada; as *janelas de contexto* crescem de milhares para centenas de milhares e, depois, milhões de tokens. Modelos de *difusão* geram imagens e vídeos de alta qualidade. Na ciência, o *AlphaFold* prediz estruturas de proteínas com impacto profundo na biologia (reconhecido com o Nobel de Química de 2024).
-- **2024–2026 — os modelos de raciocínio.** Surge uma nova classe de modelos que "pensa antes de responder": em vez de produzir a resposta de imediato, o modelo gasta *computação em tempo de inferência* (test-time compute) gerando cadeias de raciocínio, o que eleva o desempenho em matemática, ciência e programação. Benchmarks exigentes — GPQA, FrontierMath, ARC-AGI-2, SWE-bench, entre outros — tornam-se a régua do progresso. O cenário fica *multipolar*: vários laboratórios disputam a fronteira com modelos fechados de ponta e modelos *abertos* cada vez mais competitivos, num equilíbrio de especialização e com queda acentuada de custo por token.
+- **2012–2016 — a ascensão do profundo.** Redes convolucionais passam a dominar a visão; redes recorrentes (LSTM) e modelos *sequência-a-sequência* avançam tradução e reconhecimento de fala. O aprendizado por reforço profundo aprende a jogar videogames a partir de pixels e, em **2016**, o [*AlphaGo*](https://en.wikipedia.org/wiki/AlphaGo) derrota um dos maiores jogadores humanos de Go — feito então considerado a uma década de distância. A receita — busca em árvore (MCTS) somada a redes profundas e aprendizado por reforço — é um gancho direto para a nossa Unidade 2.
+- **2017 — o Transformer.** O artigo [*"Attention Is All You Need"*](https://arxiv.org/abs/1706.03762) introduz a arquitetura **Transformer**, baseada em mecanismos de *atenção*. Ela destrava o treinamento paralelo em escala massiva e se torna o alicerce de quase toda a IA de linguagem que veio depois.
+- **2018–2020 — pré-treinamento e escala.** Modelos como BERT e a família GPT popularizam o *pré-treinamento* em grandes corpora seguido de ajuste fino. As [*leis de escala*](https://arxiv.org/abs/2001.08361) mostram que aumentar dados, parâmetros e cálculo melhora o desempenho de forma previsível. O [GPT-3](https://arxiv.org/abs/2005.14165) (2020) exibe *aprendizado com poucos exemplos* — resolver tarefas novas a partir de instruções, sem re-treino.
+- **2022 — a IA generativa chega ao público.** O *ajuste por instrução* e o **[aprendizado por reforço a partir de feedback humano](https://arxiv.org/abs/2203.02155)** (RLHF) alinham os modelos ao uso conversacional. O lançamento do ChatGPT leva os modelos de linguagem de larga escala (**LLMs**) ao cotidiano de centenas de milhões de pessoas.
+- **2023–2024 — multimodalidade, contexto longo e ciência.** Modelos passam a processar texto, imagem, áudio e vídeo de forma integrada; as *janelas de contexto* crescem de milhares para centenas de milhares e, depois, milhões de tokens. Modelos de *difusão* geram imagens e vídeos de alta qualidade. Na ciência, o [*AlphaFold*](https://en.wikipedia.org/wiki/AlphaFold) prediz estruturas de proteínas com impacto profundo na biologia (reconhecido com o Nobel de Química de 2024).
+- **2024–2026 — os modelos de raciocínio.** Surge uma nova classe de modelos que "pensa antes de responder": em vez de produzir a resposta de imediato, o modelo gasta *computação em tempo de inferência* (test-time compute) gerando cadeias de raciocínio, o que eleva o desempenho em matemática, ciência e programação. Benchmarks exigentes — GPQA, FrontierMath, [ARC-AGI-2](https://arcprize.org/), [SWE-bench](https://www.swebench.com/), entre outros — tornam-se a régua do progresso. O cenário fica *multipolar*: vários laboratórios disputam a fronteira com modelos fechados de ponta e modelos *abertos* cada vez mais competitivos, num equilíbrio de especialização e com queda acentuada de custo por token.
 
 > **Nuance — poder não é confiabilidade.** Apesar de impressionantes, esses modelos ainda *alucinam* (afirmam com confiança coisas falsas), falham em planejamento de longo horizonte e não oferecem garantias formais. Reconhecer esses limites é parte da competência técnica — e motiva diretamente a nossa Unidade 5 (incerteza) e a Disciplina 4 (Ética e IA responsável).
 
@@ -120,9 +130,14 @@ O capítulo 1 do AIMA foi escrito antes do que talvez seja a década mais transf
 
 A fronteira de 2026 tem um nome: **IA agêntica**. E a boa notícia pedagógica é que ela nos traz de volta, em roupa nova, ao conceito com que abrimos o curso — o agente racional.
 
+<figure>
+  <img src="/blog/images/cursos/introducao-ia/agente-ambiente.svg" alt="Laço agente-ambiente: o agente age por atuadores e percebe por sensores, em ciclo." style="width:100%;height:auto">
+  <figcaption style="font-size:.85rem;text-align:center;opacity:.7">O laço agente–ambiente (definido na §3.4) — é essa estrutura que a IA agêntica retoma.</figcaption>
+</figure>
+
 - **De "chatbot" a "agente".** Um chatbot responde a um *prompt*. Um agente vai além: ele *percebe* um objetivo, *planeja* uma sequência de passos, *usa ferramentas* (chama APIs, executa código, navega na web, opera o computador), *mantém memória* entre etapas e *corrige-se* por realimentação, checando se cada passo aproximou do objetivo. Essa é, quase palavra por palavra, a estrutura do agente que formalizaremos na próxima aula (A2).
 - **Os blocos de construção.** Percepção e raciocínio; planejamento; uso de ferramentas; e memória — orquestrados em *laços de execução* que podem rodar de minutos a horas, em vez de uma única troca de mensagens. Surgem *sistemas multiagentes* (vários agentes especializados cooperando) e agentes que controlam diretamente o computador (tirando capturas de tela, movendo o mouse, digitando).
-- **A infraestrutura.** Para conectar agentes a ferramentas e a outros agentes, consolidaram-se *protocolos* abertos — por exemplo, um protocolo de contexto para a comunicação agente–ferramenta e protocolos de comunicação agente–agente —, comparados por analistas ao papel do "USB-C e do TCP/IP" na era da IA.
+- **A infraestrutura.** Para conectar agentes a ferramentas e a outros agentes, consolidaram-se *protocolos* abertos — por exemplo, um [protocolo de contexto](https://modelcontextprotocol.io/) para a comunicação agente–ferramenta e protocolos de comunicação agente–agente —, comparados por analistas ao papel do "USB-C e do TCP/IP" na era da IA.
 - **Os novos problemas.** Quando um agente age com autonomia sobre sistemas reais, surgem questões que um chatbot não levanta: confiabilidade, permissões e identidade (agentes tendem a ficar "superautorizados"), auditoria de cada ação, custo e responsabilização. A *governança de agentes* torna-se tema central — e reforça a importância da ética e da segurança.
 
 > **Conexão com o curso.** A IA agêntica é a versão moderna, movida a LLM, do *agente racional* clássico. E tudo o que estudaremos reaparece dentro dela: **busca** (planejar sequências de ações), **lógica e conhecimento** (representar o mundo e o objetivo), **incerteza** (decidir com informação incompleta) e **decisão/MDPs** (escolher a próxima ação para maximizar o resultado esperado). É por isso que mantemos esses fundamentos "clássicos": eles voltaram ao centro do palco.
@@ -143,7 +158,7 @@ Raciocínio robusto e *verificável*; planejamento confiável de longo horizonte
 
 ## 9. IA fraca × IA forte; riscos e o debate
 
-Vale distinguir dois sentidos de "IA". A **IA fraca** pergunta se máquinas podem *agir* como se fossem inteligentes — a posição da engenharia, que é a nossa. A **IA forte** pergunta se máquinas podem *realmente* pensar, ter mente e consciência — uma questão filosófica (ilustrada pelo argumento do "quarto chinês", de John Searle). Para construir sistemas úteis, o que importa é o comportamento; a questão da mente, embora fascinante, não precisa ser resolvida para o trabalho de engenharia.
+Vale distinguir dois sentidos de "IA". A **IA fraca** pergunta se máquinas podem *agir* como se fossem inteligentes — a posição da engenharia, que é a nossa. A **IA forte** pergunta se máquinas podem *realmente* pensar, ter mente e consciência — uma questão filosófica (ilustrada pelo [argumento do "quarto chinês"](https://plato.stanford.edu/entries/chinese-room/), de John Searle). Para construir sistemas úteis, o que importa é o comportamento; a questão da mente, embora fascinante, não precisa ser resolvida para o trabalho de engenharia.
 
 A meta de sistemas amplamente competentes em muitas tarefas costuma ser chamada de **inteligência artificial geral** (AGI). Independentemente de quão perto se está dela, o aumento de autonomia e capacidade traz riscos concretos que já exigem atenção: viés e discriminação, desinformação em escala, impacto sobre o trabalho, uso malicioso e os desafios de segurança e alinhamento de agentes autônomos.
 
@@ -198,9 +213,9 @@ Este é o mapa do que vem a seguir, e como cada peça responde à pergunta "como
 
 ## Para ir além (leitura)
 
-- **Base:** Russell & Norvig, *Inteligência Artificial* (AIMA), cap. 1 — "Introdução".
-- **Clássico fundador:** A. M. Turing, "Computing Machinery and Intelligence" (*Mind*, 1950) — a origem do Teste de Turing.
-- **Leituras de ponta:** Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (ICLR 2023, arXiv:2210.03629); Wang et al., *A Survey on LLM-based Autonomous Agents* (2024, arXiv:2308.11432) — como a arquitetura clássica de agentes reaparece nos agentes de LLM.
+- **Base:** Russell & Norvig, [*Inteligência Artificial* (AIMA)](http://aima.cs.berkeley.edu/), cap. 1 — "Introdução".
+- **Clássico fundador:** A. M. Turing, ["Computing Machinery and Intelligence"](https://doi.org/10.1093/mind/LIX.236.433) (*Mind*, 1950) — a origem do Teste de Turing.
+- **Leituras de ponta:** Yao et al., [*ReAct: Synergizing Reasoning and Acting in Language Models*](https://arxiv.org/abs/2210.03629) (ICLR 2023); Wang et al., [*A Survey on LLM-based Autonomous Agents*](https://arxiv.org/abs/2308.11432) (2024) — como a arquitetura clássica de agentes reaparece nos agentes de LLM.
 
 ---
 
