@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: "O que é BKT — e como ele virou o cérebro do MedCortex One"
 date: 2026-07-08 00:30:00 -0300
 categories: [Tecnologia]
