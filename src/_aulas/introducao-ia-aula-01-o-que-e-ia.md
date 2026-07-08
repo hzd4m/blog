@@ -13,6 +13,58 @@ permalink: /cursos/introducao-ia/aula-01-o-que-e-ia/
 
 *Da IA simbólica aos LLMs e à "IA agêntica". Referência-base: Russell & Norvig, **Inteligência Artificial** (AIMA), cap. 1.*
 
+<details class="slides-aula" style="margin:1.5rem 0;border:1px solid rgba(128,128,128,.25);border-radius:10px;padding:.6rem 1rem">
+<summary style="cursor:pointer;font-weight:600">🖼️ Slides desta aula — a apresentação, slide a slide</summary>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-01.png" alt="Slide 1" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Esse é o slide de abertura, e eu já quis dar um spoiler do curso inteiro nele: o ciclo perceber → pensar → agir. Guarda esse desenho, porque no fundo tudo que a gente vai estudar é uma variação dele.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-02.png" alt="Slide 2" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Aqui eu quero te convencer de que definir IA não é frescura de filósofo — é uma decisão de projeto. Se o objetivo é parecer humano, você mede uma coisa; se é atingir o melhor resultado, você mede outra. O campo moderno escolheu o lado do alvo, não o da máscara.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-03.png" alt="Slide 3" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Esses dois eixos são o mapa da mina: no vertical, o objetivo (imitar o humano ou ser racional); no horizontal, o foco (o pensamento por dentro ou o comportamento por fora). Parece abstrato agora, mas é cruzando esses eixos que o campo inteiro se organiza.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-04.png" alt="Slide 4" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Cruzou os eixos, nasceu a matriz: quatro jeitos de fazer IA. E repara que eu destaquei o quadrante de baixo à direita de propósito — "agir racionalmente" é o enfoque que venceu e é o fio condutor deste curso do começo ao fim.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-05.png" alt="Slide 5" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Essa é a minha analogia favorita da aula: a gente não constrói avião com pena pra enganar pombo, a gente constrói pra voar bem. O Teste de Turing mede imitação; a engenharia de IA mede desempenho — e são jogos completamente diferentes.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-06.png" alt="Slide 6" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Aqui está o conceito central de tudo: o agente racional, que percebe o ambiente pelos sensores e age pelos atuadores buscando o melhor resultado esperado. E o Herbert Simon dá o toque de realismo com a racionalidade limitada — ninguém tem tempo e computação infinitos, então o jogo é fazer o melhor possível com o que se tem.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-07.png" alt="Slide 7" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">A IA não caiu do céu em 1956 — ela é um chip com fios puxados de várias disciplinas: lógica e probabilidade da matemática, utilidade da economia, o cérebro da neurociência e o feedback da teoria de controle. Eu gosto de mostrar isso porque explica por que o campo fala tantos "idiomas" diferentes ao mesmo tempo.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-08.png" alt="Slide 8" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">A história da IA é uma montanha-russa: euforia em Dartmouth, tombo nos anos 70, hype dos sistemas especialistas, colapso no fim dos anos 80... Mas repara na linha laranja subindo por baixo das ondas — o rigor científico e o poder computacional nunca pararam de crescer, e foi isso que sustentou a revolução atual.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-09.png" alt="Slide 9" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Essa é a linha de montagem que nos trouxe até aqui: big data e GPUs, deep learning, os Transformers de 2017, LLMs prevendo a próxima palavra, RLHF pra alinhar com o que a gente quer, e agora os modelos de raciocínio que "pensam antes de agir". Cada bloco destravou o seguinte — não foi mágica, foi escala mais arquitetura.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-10.png" alt="Slide 10" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Esse slide é o "plot twist" da aula: a tal IA agêntica de 2026 é o velho ciclo do agente racional com um LLM enfiado no lugar do cérebro. Sensores agora leem web e APIs, atuadores executam código e mandam mensagens — o círculo que abrimos lá no slide 1 se fecha aqui.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-11.png" alt="Slide 11" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Momento sinceridade: a IA de hoje brilha em linguagem, visão, jogos e até dobramento de proteínas, mas ainda tropeça em raciocínio longo verificável, alucinações, causalidade e garantias de segurança. E a faixa de obra lá embaixo é o aviso que eu mais repito: demo bonita não é produção — o sistema que impressiona no slide pode falhar às 2h da manhã.</figcaption>
+</figure>
+<figure style="margin:1.2rem 0">
+<img src="/blog/images/cursos/introducao-ia/slides/slide-12.png" alt="Slide 12" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(128,128,128,.2)">
+<figcaption style="font-size:.9rem;opacity:.8;margin-top:.4rem">Pra fechar, o mapa do curso inteiro pendurado no corpo do agente racional: agentes e ambientes, busca, lógica, planejamento, incerteza e MDPs — cada unidade cuida de um pedaço do bicho. Tudo que vem pela frente é ferramenta pra um único desafio de engenharia: construir artefatos que agem de forma inteligente.</figcaption>
+</figure>
+</details>
+
 ## Objetivos desta aula
 
 Ao final, você deve ser capaz de:
@@ -197,19 +249,6 @@ Este é o mapa do que vem a seguir, e como cada peça responde à pergunta "como
 - **IA fraca / forte** — agir *como se* fosse inteligente / *realmente* pensar e ter mente.
 - **AGI** — inteligência artificial geral: competência ampla em muitas tarefas.
 - **Alinhamento** — garantir que sistemas autônomos façam o que pretendemos que façam.
-
-## Questões de revisão
-
-1. Explique as duas dimensões que geram os quatro enfoques da IA e posicione cada enfoque na matriz.
-2. Por que "agir racionalmente" é considerado mais geral do que "pensar racionalmente"? Dê um exemplo de ação racional que não passa por inferência lógica explícita.
-3. O que é o Teste de Turing e por que ele não guia a construção da maioria dos sistemas modernos? Use a analogia do voo.
-4. Diferencie "solúvel em princípio" de "solúvel na prática". Por que essa distinção é central na IA?
-5. O que caracteriza a racionalidade limitada e por que ela é mais realista do que a racionalidade perfeita?
-6. Descreva dois dos "invernos" da IA: o que os causou e o que a comunidade aprendeu com eles?
-7. Qual foi o papel do Transformer (2017) e do RLHF (2022) na trajetória que levou aos LLMs atuais?
-8. Explique, com suas palavras, por que a "IA agêntica" pode ser vista como um reencontro com o conceito clássico de agente racional.
-9. Cite duas capacidades em que a IA já é forte e dois problemas em que ainda é fraca, justificando.
-10. Por que "funcionar numa demonstração" não é o mesmo que "ser confiável em produção"?
 
 ## Para ir além (leitura)
 
