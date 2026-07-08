@@ -7,7 +7,6 @@ ano: 2026
 tech: [Ruby on Rails, PostgreSQL, Hotwire, Solid Queue, BKT, Grafo de competências]
 subtitulo: "Plataforma de estudo para estudantes de Medicina: banco de questões, simulados, flashcards com revisão espaçada e uma estimativa honesta do que o aluno domina."
 descricao: "App Rails de educação médica adaptativa: BKT para estimar domínio por competência, taxonomia hierárquica de ~300 nós e um grafo de pré-requisitos em construção."
-capa: /images/projetos/medcortex/logo.png
 ---
 
 O **MedCortex** é uma plataforma de estudo para estudantes de Medicina que estou construindo em Rails. A ideia base é simples: banco de questões, simulados, flashcards e revisão espaçada — o arroz com feijão de qualquer app de estudo. A parte que me interessa de verdade é a camada por baixo: o sistema tenta **estimar o quanto o aluno domina cada competência** e usar isso a favor dele. O projeto nasceu de pesquisa (PIBIC, UESPI), mas é pensado como produto: a pesquisa é a origem, não a missão.

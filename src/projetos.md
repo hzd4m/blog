@@ -17,7 +17,7 @@ permalink: /projetos/
   <ul class="projetos-lista">
     <% projetos.each do |proj| %>
       <% capa = proj.data.capa || proj.data.galeria&.first&.dig("src") %>
-      <li class="projeto-card">
+      <li class="projeto-card<%= capa ? '' : ' projeto-card--sem-capa' %>">
         <% if capa %>
           <a href="<%= proj.relative_url %>"><img src="<%= relative_url(capa) %>" alt="<%= proj.data.title %>" loading="lazy" /></a>
         <% end %>

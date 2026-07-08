@@ -391,6 +391,7 @@ pre code {
   border-top: 1px solid var(--color-rule);
 }
 .projeto-card:first-child { border-top: none; }
+.projeto-card--sem-capa { grid-template-columns: 1fr; }
 .projeto-card img {
   width: 100%;
   border-radius: var(--radius);
