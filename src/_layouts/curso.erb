@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<article class="livro curso">
+
+  <header class="livro__capa">
+    <pre>
++---------------------------+
+|                           |
+|       <%= data.title %>
+|                           |
+|       por <%= data.autor %>
+|                           |
++---------------------------+
+    </pre>
+    <h1><%= data.title %></h1>
+    <p class="livro__autor">um curso de <strong><%= data.autor %></strong><% if data.ano %> &middot; <%= data.ano %><% end %></p>
+  </header>
+
+  <section class="livro__descricao">
+    <p><em><%= data.descricao %></em></p>
+    <%= yield %>
+  </section>
+
+  <%
+    aulas_do_curso = collections.aulas.resources
+                       .select { |a| a.data.curso_slug == data.slug }
+                       .sort_by { |a| a.data.ordem.to_i }
+  %>
+
+  <section class="livro__sumario">
+    <h2>Aulas</h2>
+
+    <% if aulas_do_curso.empty? %>
+      <p><em>Nenhuma aula publicada ainda.</em></p>
+    <% else %>
+      <ol>
+        <% aulas_do_curso.each do |aula| %>
+          <li>
+            <a href="<%= aula.relative_url %>">
+              <strong><%= aula.data.title %></strong>
+            </a>
+            <% if aula.data.tempo_leitura %>
+              <span class="livro__tempo">&middot; <%= aula.data.tempo_leitura %></span>
+            <% end %>
+          </li>
+        <% end %>
+      </ol>
+
+      <div class="livro__cta">
+        <a href="<%= aulas_do_curso.first.relative_url %>">
+          Começar pela Aula <%= aulas_do_curso.first.data.ordem %> &rarr;
+        </a>
+      </div>
+    <% end %>
+  </section>
+
+  <footer class="livro__rodape">
+    <p><a href="<%= relative_url '/cursos/' %>">&larr; Todos os cursos</a></p>
+  </footer>
+</article>
