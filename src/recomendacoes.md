@@ -12,6 +12,7 @@ permalink: /recomendacoes/
     { chave: "livro",      nome: "Livros" },
     { chave: "musica",     nome: "Música" },
     { chave: "artigo",     nome: "Artigos" },
+    { chave: "video",      nome: "Vídeos" },
     { chave: "entrevista", nome: "Entrevistas" },
     { chave: "outros",     nome: "Outros" },
   ]
